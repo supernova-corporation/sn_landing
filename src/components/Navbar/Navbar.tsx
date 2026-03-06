@@ -13,9 +13,9 @@ import { Logo as CommonLogo } from "../common/logo";
  */
 const Logo = () => (
     <Link href="/" className="flex items-center gap-[11px] no-underline group relative z-[210]">
-        <CommonLogo width={36} height={36} />
+        <CommonLogo size={30} />
         <div>
-            <div className="font-display font-black text-[17px] tracking-[0.14em] uppercase text-text-main line-height-1">
+            <div className="font-display font-black text-[17px] tracking-[0.14em] uppercase text-text-main">
                 Supernova
             </div>
             <span className="font-mono text-[9px] tracking-[0.3em] uppercase text-text-muted block">
@@ -82,39 +82,41 @@ export const NavbarContent = () => {
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-[200] flex items-center justify-between px-[24px] md:px-[52px] h-[68px] bg-dark/95 backdrop-blur-[24px] border-b border-border-subtle">
-            <Logo />
+            <div className="w-6xl mx-auto flex items-center justify-between">
+                <Logo />
 
-            <div className="flex items-center gap-[32px]">
-                {/* Desktop Menu */}
-                <ul className="hidden lg:flex gap-[26px] list-none m-0 p-0">
-                    {links.map((link) => (
-                        <li key={link.href}>
-                            <Link
-                                href={link.href}
-                                className="font-mono text-[11px] tracking-[0.18em] uppercase text-text-muted no-underline transition-colors duration-200 hover:text-text-main"
-                            >
-                                {link.label}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
 
-                <Link
-                    href="/login"
-                    className="hidden lg:block font-mono text-[11px] tracking-[0.18em] uppercase text-dark bg-teal px-[22px] py-[10px] no-underline font-medium transition-colors duration-200 hover:bg-[#00d9a8] whitespace-nowrap"
-                >
-                    Log In
-                </Link>
+                <div className="flex items-center gap-[32px]">
+                    {/* Desktop Menu */}
+                    <ul className="hidden lg:flex gap-[26px] list-none m-0 p-0">
+                        {links.map((link) => (
+                            <li key={link.href}>
+                                <Link
+                                    href={link.href}
+                                    className="font-mono text-[11px] tracking-[0.18em] uppercase text-text-muted no-underline transition-colors duration-200 hover:text-text-main"
+                                >
+                                    {link.label}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
 
-                {/* Mobile Toggle */}
-                <button
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="lg:hidden relative z-[210] p-2 -mr-2 text-text-main hover:text-teal transition-colors"
-                >
-                    {isOpen ? <X size={24} /> : <Menu size={24} />}
-                </button>
+                    <Link
+                        href="/login"
+                        className="hidden lg:block font-mono text-[11px] tracking-[0.18em] uppercase text-dark bg-teal px-[22px] py-[10px] no-underline font-medium transition-colors duration-200 hover:bg-[#00d9a8] whitespace-nowrap"
+                    >
+                        Log In
+                    </Link>
+
+                    {/* Mobile Toggle */}
+                    <button
+                        onClick={() => setIsOpen(!isOpen)}
+                        className="lg:hidden relative z-[210] p-2 -mr-2 text-text-main hover:text-teal transition-colors"
+                    >
+                        {isOpen ? <X size={24} /> : <Menu size={24} />}
+                    </button>
+                </div>
             </div>
-
             {/* Mobile Menu Overlay */}
             <AnimatePresence>
                 {isOpen && (

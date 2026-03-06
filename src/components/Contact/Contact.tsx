@@ -103,26 +103,28 @@ export const Contact = () => {
 export const Footer = () => {
     return (
         <footer className="bg-dark border-t border-border-subtle px-[24px] md:px-[52px] py-[26px] flex flex-col md:flex-row items-center justify-between gap-[16px]">
-            <div className="flex items-center gap-[10px]">
-                <CommonLogo size={32} />
-                <div>
-                    <div className="font-display font-black text-[14px] tracking-[0.14em] uppercase text-text-main">
-                        Supernova
+            <div className="w-6xl mx-auto flex items-center justify-between">
+                <div className="flex items-center gap-[10px]">
+                    <CommonLogo size={26} />
+                    <div>
+                        <div className="font-display font-black text-[14px] tracking-[0.14em] uppercase text-text-main">
+                            Supernova
+                        </div>
+                        <span className="font-mono text-[7.5px] tracking-[0.25em] text-text-muted block mt-[2px]">
+                            Log-Tech
+                        </span>
                     </div>
-                    <span className="font-mono text-[7.5px] tracking-[0.25em] text-text-muted block mt-[2px]">
-                        Log-Tech · supernova.center
-                    </span>
                 </div>
-            </div>
 
-            <ul className="flex gap-[20px] list-none">
-                <li><a href="mailto:admin@supernova.center" className="font-mono text-[10px] tracking-[0.1em] text-text-muted no-underline transition-colors duration-200 hover:text-teal">admin@supernova.center</a></li>
-                <li><a href="mailto:support@supernova.center" className="font-mono text-[10px] tracking-[0.1em] text-text-muted no-underline transition-colors duration-200 hover:text-teal">support@supernova.center</a></li>
-                <li><a href="https://superload.app" target="_blank" rel="noopener noreferrer" className="font-mono text-[10px] tracking-[0.1em] text-text-muted no-underline transition-colors duration-200 hover:text-teal">superload.app ↗</a></li>
-            </ul>
+                <ul className="flex gap-[20px] list-none">
+                    <li><a href="mailto:admin@supernova.center" className="font-mono text-[10px] tracking-[0.1em] text-text-muted no-underline transition-colors duration-200 hover:text-teal">admin@supernova.center</a></li>
+                    <li><a href="mailto:support@supernova.center" className="font-mono text-[10px] tracking-[0.1em] text-text-muted no-underline transition-colors duration-200 hover:text-teal">support@supernova.center</a></li>
+                    <li><a href="https://superload.app" target="_blank" rel="noopener noreferrer" className="font-mono text-[10px] tracking-[0.1em] text-text-muted no-underline transition-colors duration-200 hover:text-teal">superload.app ↗</a></li>
+                </ul>
 
-            <div className="font-mono text-[10px] text-text-muted tracking-[0.1em]">
-                © {new Date().getFullYear()} Supernova Log-Tech
+                <div className="font-mono text-[10px] text-text-muted tracking-[0.1em]">
+                    © {new Date().getFullYear()} Supernova Log-Tech
+                </div>
             </div>
         </footer>
     );
