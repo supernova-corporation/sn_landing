@@ -4,24 +4,21 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-
-import { Logo as CommonLogo } from "../common/logo";
+import Image from "next/image";
 
 /**
  * Supernova Logo Component
  * @returns JSX.Element
  */
 const Logo = () => (
-    <Link href="/" className="flex items-center gap-[11px] no-underline group relative z-[210]">
-        <CommonLogo size={30} />
-        <div>
-            <div className="font-display font-black text-[17px] tracking-[0.14em] uppercase text-text-main">
-                Supernova
-            </div>
-            <span className="font-mono text-[9px] tracking-[0.3em] uppercase text-text-muted block">
-                Log-Tech
-            </span>
-        </div>
+    <Link href="https://supernova.center">
+        <Image
+            src="/supernova_full_logo.png"
+            alt="SUPERNOVA Logo"
+            width={160}
+            height={42}
+            className="h-[36px] md:h-[42px] w-auto brightness-125"
+        />
     </Link>
 );
 
@@ -81,11 +78,9 @@ export const NavbarContent = () => {
     };
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-[200] flex items-center justify-between px-[24px] md:px-[52px] h-[68px] bg-dark/95 backdrop-blur-[24px] border-b border-border-subtle">
-            <div className="w-6xl mx-auto flex items-center justify-between">
+        <nav className="fixed top-0 left-0 right-0 z-25 flex items-center justify-between  py-4 px-2 md:px-12  bg-dark/50 backdrop-blur-lg border-b border-border-subtle">
+            <div className="container mx-auto flex items-center justify-between">
                 <Logo />
-
-
                 <div className="flex items-center gap-[32px]">
                     {/* Desktop Menu */}
                     <ul className="hidden lg:flex gap-[26px] list-none m-0 p-0">

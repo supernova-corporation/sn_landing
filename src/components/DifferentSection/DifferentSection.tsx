@@ -25,7 +25,7 @@ const DifferentSection = () => {
 
     return (
         <section id="different" className="bg-dark2 py-[120px]">
-            <div className="max-w-[1280px] mx-auto px-[24px] md:px-[64px]">
+            <div className="container mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-[5fr_7fr] gap-[48px] lg:gap-[96px] items-start">
 
                     {/* Left - Copy */}

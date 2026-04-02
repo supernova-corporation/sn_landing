@@ -35,7 +35,7 @@ export const Contact = () => {
                 }}
             />
 
-            <div className="max-w-[1280px] mx-auto px-[24px] md:px-[64px] relative z-10">
+            <div className="container mx-auto relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-[48px] lg:gap-[96px] items-center">
 
                     <motion.div

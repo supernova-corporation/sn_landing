@@ -78,7 +78,7 @@ const Superload = () => {
                 }}
             />
 
-            <div className="max-w-[1280px] mx-auto px-[24px] md:px-[64px]">
+            <div className="container mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-[48px] lg:gap-[96px] items-center relative z-10">
 
                     {/* Left - Copy */}

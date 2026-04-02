@@ -12,7 +12,7 @@ const Hero = () => {
     return (
         <section
             id="hero"
-            className="min-h-screen flex items-end px-[24px] md:px-[64px] pb-[100px] pt-[120px] relative overflow-hidden max-w-full"
+            className="min-h-screen flex items-end  pb-[100px] pt-[120px] relative overflow-hidden container mx-auto"
         >
             {/* Animated Grid Background */}
             <div
@@ -31,7 +31,7 @@ const Hero = () => {
                     background: 'radial-gradient(ellipse, var(--teal-glow) 0%, transparent 65%)'
                 }}
             />
-            <div className="w-6xl mx-auto">
+            <div className="w-full">
                 <div className="relative z-10 ">
                     {/* Kicker */}
                     <motion.div

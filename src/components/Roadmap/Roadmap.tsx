@@ -40,7 +40,7 @@ const Roadmap = () => {
 
     return (
         <section id="roadmap" className="bg-dark2 py-[120px]">
-            <div className="max-w-[1280px] mx-auto px-[24px] md:px-[64px]">
+            <div className="container mx-auto">
 
                 <motion.div
                     initial="hidden"

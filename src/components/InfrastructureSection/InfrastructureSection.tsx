@@ -49,7 +49,7 @@ const InfrastructureSection = () => {
 
     return (
         <section id="infra" className="bg-dark py-[120px]">
-            <div className="max-w-[1280px] mx-auto px-[24px] md:px-[64px]">
+            <div className="container mx-auto">
 
                 {/* Header */}
                 <motion.div
